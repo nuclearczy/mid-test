@@ -7,7 +7,6 @@
  * @license    This project is released under the BSD-3-Clause License.
  */
 #include <gtest/gtest.h>
-#include <matplotlibcpp.h>
 #include <vector>
 #include <fstream>
 #include <sstream>
@@ -36,6 +35,5 @@ TEST(testOthers, shouldPass) {
 
     std::cout << "leg data: " << leg.largestGrad << std::endl;
     std::cout << "Human numbers: " << humanInfo.size() << std::endl;
-    xingyun.visualization();
     EXPECT_EQ(1, 1);
 }
