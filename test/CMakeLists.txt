@@ -10,10 +10,8 @@ add_executable(
     testSideStanding.cpp
 )
 
-find_package(PythonLibs)
+#find_package(PythonLibs)
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
-                                           ${CMAKE_SOURCE_DIR}/include 
-                                           PRIVATE ${PYTHON_INCLUDE_DIR})
-target_link_libraries(cpp-test PUBLIC gtest ${PYTHON_LIBRARY})
+                                           ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(cpp-test PUBLIC gtest)
 
-message(${PYTHON_INCLUDE_DIRS})
