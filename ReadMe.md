@@ -4,7 +4,7 @@
 ![GitHub](https://img.shields.io/github/license/jingCGM/xingyun)
 ---
 
-![Output Sample](https://github.com/jingCGM/xingyun/blob/PhaseII_development/dataset/demos/sample_results/Case1.png)
+![Output Sample](https://github.com/jingCGM/xingyun/blob/PhaseII_development/dataset/combine_case_1.png)
 
 ## Overview
 Xingyun is a software module which uses data from a 2D LIDAR to detect humans near a robot and give their relative locations in the robot’s reference frame. The purpose is to allow a robot to evoke appropriate behaviour in the vicinity of humans. 
