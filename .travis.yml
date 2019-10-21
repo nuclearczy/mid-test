@@ -25,7 +25,7 @@ before_install:
 install:
   - sudo apt-get install -y -qq lcov
   - sudo apt-get install python-matplotlib python-numpy python2.7-dev
-  - sudo apt-get install libboost-dev
+  - sudo apt-get install libboost-all-dev
 script:
   - export CXX=$COMPILER;
   - mkdir build

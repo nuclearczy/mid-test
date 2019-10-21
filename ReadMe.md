@@ -1,5 +1,5 @@
 # Xingyun (星云) Perception Module
-[![Build Status](https://travis-ci.com/jingCGM/xingyun.svg?branch=master)](https://travis-ci.com/jingCGM/xingyun)
+[![Build Status](https://travis-ci.com/nuclearczy/mid-test.svg?branch=master)](https://travis-ci.com/nuclearczy/mid-test)
 [![Coverage Status](https://coveralls.io/repos/github/jingCGM/xingyun/badge.svg)](https://coveralls.io/github/jingCGM/xingyun)
 ![GitHub](https://img.shields.io/github/license/jingCGM/xingyun)
 ---
