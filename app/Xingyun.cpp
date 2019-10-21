@@ -29,8 +29,8 @@ namespace plt = matplotlibcpp;
 #define CLUSTER_THRESHOLD 0.3
 #define LEG_DIAMETER 0.4
 #define LEG_DISTANCE 0.3
-#define MAJOR_AXIS 0.6
-#define MINOR_AXIS 0.4
+#define MAJOR_AXIS 0.5
+#define MINOR_AXIS 0.2
 #define GRAD_DIFF_THRESHOLD 3
 
 /** @brief Read data and classify the points into obstacles. */
@@ -145,7 +145,7 @@ void Xingyun::processNormalHuman(std::vector<Obstacle> queue) {
     // Create Human object and add it to humanList
     Human human;
     human.centroid = centroid;
-    human.orientationAngle = orientationAngle;
+    human.orientationAngle = orientationAngle + M_PI/2;
     humanList.push_back(human);
     return;
 }
@@ -166,7 +166,7 @@ void Xingyun::processSidewaysHuman(std::vector<Obstacle> queue) {
     // Create Human object and add it to humanList
     Human human;
     human.centroid = centroid;
-    human.orientationAngle = orientation;
+    human.orientationAngle = orientation + M_PI/2;
     humanList.push_back(human);
     return;
 }
@@ -209,7 +209,7 @@ void Xingyun::humanRecognition() {
             processSidewaysHuman(temp);
         }
     }
-    
+
     if (queue.empty() == false) {
         std::vector<Obstacle> temp;
         temp.push_back(queue.front());
@@ -268,8 +268,6 @@ std::vector<Human> Xingyun::humanPerception(std::string lidarDatasetFilename) {
 /** @brief Show the output map. */
 void Xingyun::visualization() {
     plt::plot({ 0 }, { 0 }, "bs");  // Show robot as square at origin.
-    double humanWidth = 0.8;  // Human width, adjust here.
-    double humanThick = 0.3;  // Human thickness, adjust here.
     for (auto human : humanList) {
            plt::plot({ human.centroid[0] }, { human.centroid[1] }, "ro");  // Plot human centroid in map.
            double orientation = human.orientationAngle;  // Human orientation radians, x-axis (pointing to the right) is 0 radians
@@ -277,10 +275,10 @@ void Xingyun::visualization() {
            std::vector<double> x(n), y(n);
            for (int i = 0; i < n; ++i) {
                double t = 2 * M_PI * i / n;
-               x.at(i) = humanThick * cos(t) * cos(orientation)
-                       - humanWidth * sin(t) * sin(orientation) + human.centroid[0];
-               y.at(i) = humanThick * cos(t) * sin(orientation)
-                       + humanWidth * sin(t) * cos(orientation) + human.centroid[1];
+               x.at(i) = MINOR_AXIS * cos(t) * cos(orientation)
+                       - MAJOR_AXIS * sin(t) * sin(orientation) + human.centroid[0];
+               y.at(i) = MINOR_AXIS * cos(t) * sin(orientation)
+                       + MAJOR_AXIS * sin(t) * cos(orientation) + human.centroid[1];
            }
            plt::plot(x, y, "r-");  // Plot human as ellipse.
     }

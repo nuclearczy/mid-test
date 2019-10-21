@@ -8,6 +8,7 @@ add_executable(
     main.cpp
     testFrontStanding.cpp
     testSideStanding.cpp
+    testOthers.cpp
 )
 
 find_package(PythonLibs)

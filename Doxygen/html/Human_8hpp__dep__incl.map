@@ -1,0 +1,5 @@
+<map id="include/Human.hpp" name="include/Human.hpp">
+<area shape="rect" id="node2" href="$Human_8cpp.html" title="The file Human.cpp implements the Human class. The class will be used in Xingyun class. &#160;This project is released under the BSD&#45;3&#45;Clause License. " alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node3" href="$Xingyun_8cpp.html" title="The file Xingyun.cpp implements a human perception class. The class will be used for detecting human ..." alt="" coords="151,155,270,181"/>
+<area shape="rect" id="node4" href="$Xingyun_8hpp.html" title="The file Xingyun.hpp contains the header declarations for a human perception class. The class will be used for detecting human from 2D Lidar data&#45;sets. &#160;This project is released under the BSD&#45;3&#45;Clause License. " alt="" coords="195,80,333,107"/>
+</map>

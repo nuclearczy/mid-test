@@ -5,7 +5,8 @@
  *             Human class. The class will be used in Xingyun class.
  * @license    This project is released under the BSD-3-Clause License.
  */
-#pragma once
+#ifndef INCLUDE_HUMAN_HPP_
+#define INCLUDE_HUMAN_HPP_
 
 #include<iostream>
 #include<vector>
@@ -18,3 +19,6 @@ class Human{
   /** @brief The orientation angle (in radians) of a possible human obstacle. */
   double orientationAngle;
 };
+
+
+#endif  // INCLUDE_HUMAN_HPP_

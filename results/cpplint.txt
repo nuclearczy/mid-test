@@ -1,0 +1,54 @@
+jing@jing-Inspiron-5577:~/Desktop/808x/assignment/midterm/xingyun$ cpplint app/*.cpp include/*.hpp test/*.cpp
+Done processing app/Human.cpp
+Done processing app/main.cpp
+Done processing app/Obstacle.cpp
+app/Xingyun.cpp:44:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:72:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:77:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:78:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:79:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:84:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:98:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:99:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:117:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:119:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:120:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:121:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:143:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:163:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:164:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:177:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:184:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:196:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:197:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:199:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:204:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:239:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:243:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:272:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:273:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:279:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+app/Xingyun.cpp:281:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing app/Xingyun.cpp
+Done processing include/Human.hpp
+Done processing include/Obstacle.hpp
+Done processing include/Xingyun.hpp
+Done processing test/main.cpp
+test/testFrontStanding.cpp:30:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testFrontStanding.cpp:47:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testFrontStanding.cpp:65:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testFrontStanding.cpp:71:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testFrontStanding.cpp:85:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testFrontStanding.cpp:91:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testFrontStanding.cpp:264:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing test/testFrontStanding.cpp
+test/testSideStanding.cpp:28:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testSideStanding.cpp:45:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testSideStanding.cpp:63:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testSideStanding.cpp:69:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testSideStanding.cpp:75:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testSideStanding.cpp:228:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testSideStanding.cpp:264:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+test/testSideStanding.cpp:266:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing test/testSideStanding.cpp
+Total errors found: 42

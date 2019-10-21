@@ -5,7 +5,8 @@
  *             obstacle class. The class will be used in Xingyun class.
  * @license    This project is released under the BSD-3-Clause License.
  */
-#pragma once
+#ifndef INCLUDE_OBSTACLE_HPP_
+#define INCLUDE_OBSTACLE_HPP_
 
 #include<iostream>
 #include<vector>
@@ -27,3 +28,5 @@ class Obstacle{
   /** @brief The smallest gradient in the obstacle cluster. */
   double smallestGrad;
 };
+
+#endif  // INCLUDE_OBSTACLE_HPP_
