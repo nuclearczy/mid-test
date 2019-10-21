@@ -1,6 +1,6 @@
 # We need a decent ubuntu dist
 sudo: required
-dist: trusty
+dist: xenial
 
 # Modern cpp settings from
 #  http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/
@@ -25,10 +25,10 @@ before_install:
 install:
   - sudo apt-get install -y -qq lcov
   - sudo apt-get install python-matplotlib python-numpy python2.7-dev
-#  - sudo apt-get install libboost-all-dev
-#  - sudo add-apt-repository ppa:boost-latest/ppa
+  - sudo apt-get install libboost-all-dev
+#  - sudo apt-add-repository ppa:timklingt/ppa
 #  - sudo apt-get update
-  - sudo apt-get install libboost1.58-all-dev
+#  - sudo apt-get install libboost1.58-all-dev
   - sudo apt-get install libgtest-dev
 script:
   - export CXX=$COMPILER;
